@@ -1,0 +1,23 @@
+.menu-loader-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.menu-item-loader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-avatar-loader {
+  width: 100px;
+  height: 22px;
+  border-radius: 20px;
+}
+
+.menu-text-loader {
+  height: 20px;
+  width: 100%; /* Makes the text loader fill the remaining space */
+  max-width: 300px; /* Optional: you can set a max-width for text loader */
+}

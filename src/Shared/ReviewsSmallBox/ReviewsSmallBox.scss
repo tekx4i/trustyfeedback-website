@@ -1,0 +1,89 @@
+.small_review_box {
+  box-shadow: 0px 3.8px 42.73px 0px #4558F940;
+  border-radius: 23px;
+  max-width: 211px;
+  background-color: #fff;
+  animation: bounceScale 5s ease-in-out infinite;
+
+  .review_top_are {
+    padding: 14px 15px 16px;
+    border-bottom: 0.95px solid #17253f1a;
+  }
+
+  .review_head {
+    gap: 8px;
+    margin-bottom: 12px;
+
+    .user_img {
+      flex: 0 0 36px;
+
+      img {
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+      }
+    }
+
+    .user_meta {
+      h6 {
+        font-size: 15px;
+        font-weight: 500;
+        color: #000;
+        margin: 0;
+      }
+
+      .review_cont {
+        font-size: 12px;
+        color: #000;
+        display: flex;
+        gap: 4px;
+
+        span {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  .review_stars {
+    font-size: 13px;
+    gap: 9px;
+    margin-bottom: 10px;
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  p {
+    line-height: 1.38;
+    font-size: 13px;
+    margin: 0;
+  }
+
+  .review_bottom {
+    padding: 9px 15px 11px;
+    align-items: center;
+
+    .buss_name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #000;
+    }
+
+    .revies_buss_logo {
+      flex: 0 0 36px;
+      margin-right: 6px;
+
+      img {
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+      }
+    }
+
+    .rev_verified_icon {
+      margin-left: auto;
+    }
+  }
+}

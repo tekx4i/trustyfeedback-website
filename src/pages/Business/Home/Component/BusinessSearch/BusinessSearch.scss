@@ -1,0 +1,37 @@
+.business__search {
+  .container {
+    max-width: 814px;
+  }
+
+  h4 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  input {
+    height: 75px;
+    border-radius: 70px;
+    background-color: #EFF3F7;
+    padding: 10px 30px;
+    border: none;
+  }
+
+  .bseacrh__btn {
+    background-color: var(--blue);
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    border: none;
+    border-radius: 0 100px 100px 0;
+  }
+}
+
+
+@media screen and (max-width:767px) {
+  .business__search input {
+    height: 60px;
+  }
+}

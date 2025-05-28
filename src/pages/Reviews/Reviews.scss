@@ -1,0 +1,238 @@
+#my_reviews_edit {
+  .jodit-placeholder {
+    z-index: -1 !important;
+  }
+}
+.jodit-wysiwyg {
+  min-height: 200px !important;
+}
+.write__review__form {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.write__review__box {
+  padding: 65px 0px 100px;
+
+  ::placeholder {
+    color: #17253f;
+    opacity: 0.4;
+  }
+
+  .write__review__banner {
+    background-color: var(--d-blue);
+    border-radius: 25px 0 0px 25px;
+    padding: 80px 38px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 28px;
+      line-height: 1.42;
+    }
+  }
+
+  .log-form-auth {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 40px 40px 50px 30px;
+    background-color: #eff3f7;
+    height: 100%;
+    border-radius: 0 25px 25px 0;
+    label {
+      margin-bottom: 12px;
+    }
+    .social-button {
+      border-radius: 20px;
+      padding: 20px 60px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      background-color: var(--white);
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      align-items: center;
+    }
+
+    .social-button.fb {
+      background-color: #1877f2 !important;
+    }
+
+    .social-button.apple {
+      background-color: #000 !important;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 20px;
+      padding: 20px 30px;
+      border: 1px solid #17253f1b;
+      border-radius: 25px;
+      font-size: 16px;
+      height: 70px;
+    }
+
+    textarea {
+      height: 143px;
+    }
+    .jogit-editor {
+      margin-bottom: 30px;
+    }
+    .rating__star {
+      display: flex;
+      margin-bottom: 30px;
+      cursor: pointer;
+      align-items: center;
+      gap: 20px;
+
+      .star-icon {
+        margin: 0 1px;
+        opacity: 0.6;
+        transition: 0.3s all ease;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+
+    .photo-upload {
+      position: relative;
+      width: 25%;
+
+      label {
+        border: 1px dashed #17253f34;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        height: 106px;
+        width: 100%;
+
+        img {
+          width: 100%;
+          height: 106px;
+          border-radius: 20px;
+        }
+      }
+
+      .input-upload {
+        position: absolute;
+        left: 0;
+        top: -20px;
+        height: 100%;
+        cursor: pointer;
+        height: 100%;
+        display: none;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background: #ff4d4d;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+      }
+    }
+
+    .custom-button {
+      background-color: var(--body);
+      padding: 15px;
+      color: white;
+      border-radius: 100px;
+      border: 1px solid transparent !important;
+      width: 100%;
+      height: 70px;
+      gap: 7px;
+    }
+  }
+}
+.write_r__head .write_r__wrap {
+  max-width: 800px;
+}
+.jodit-editor-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.jodit-editor-container .jodit-toolbar button {
+  color: #333;
+  border-radius: 4px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.jodit-editor-container .jodit-toolbar button:hover {
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .write__review__box .write__review__banner img {
+    position: inherit;
+  }
+
+  .write__review__box .write__review__banner {
+    border-radius: 25px 25px 0 0;
+  }
+
+  .write__review__box .log-form-auth {
+    border-radius: 0 0 25px 25px;
+  }
+
+  .write__review__box {
+    padding: 65px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .write__review__box .write__review__banner img {
+    position: inherit;
+  }
+
+  .write__review__box .write__review__banner {
+    border-radius: 25px 25px 0 0;
+    padding: 30px 20px 0;
+  }
+
+  .write__review__box .log-form-auth {
+    border-radius: 0 0 25px 25px;
+    padding: 30px 20px;
+  }
+
+  .write__review__box {
+    padding: 40px 0px 50px;
+  }
+  .write__review__form {
+    padding-top: 50px;
+  }
+  .write__review__box .log-form-auth .photo-upload label,
+  .write__review__box .log-form-auth .photo-upload label img {
+    height: 80px;
+  }
+  .write__review__box .log-form-auth .custom-button {
+    height: 60px;
+  }
+}
+
+#otp_modal {
+  .modal-content {
+    border-radius: 40px;
+    padding: 30px;
+  }
+  .modal-header {
+    border: 0;
+    display: none;
+  }
+}

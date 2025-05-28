@@ -1,0 +1,42 @@
+.blog__banner__area {
+    .blog_p__head {
+        margin-bottom: 85px;
+    }
+
+    .trending_b_head {
+        margin-bottom: 40px;
+    }
+
+}
+
+body:has(.our__blog__page) #footer {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+
+@media screen and (max-width:767px) {
+    .blog__banner__area .tt_blog_box:first-child {
+        float: none;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .blog__banner__area .tt_blog_box:first-child .tt_blog_img img {
+        height: 200px;
+    }
+
+    .blog__banner__area .blog_p__head {
+        margin-bottom: 40px;
+    }
+
+    .blog__banner__area .tt_blog_box .tt_blog_img img {
+        height: 116px;
+    }
+
+    .blog__banner__area .tt_blog_box .tt_blog_img {
+        flex: 0 0 120px !important;
+    }
+
+}

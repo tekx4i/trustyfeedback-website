@@ -1,0 +1,193 @@
+#user-search {
+  height: 51px;
+  .categories__search__box {
+    border: 1px solid #e1e3f6;
+    border-radius: 70px;
+    background-color: #fff;
+    padding: 10px;
+    max-height: 53px;
+    box-shadow: none;
+    transition: ease all 0.5s;
+    font-size: 15px;
+
+    &:hover {
+      box-shadow: 0px 0px 35px 0px #17253f33;
+    }
+    input {
+      border: none;
+      padding: 0;
+      border-radius: 0;
+      border-left: 1px solid #e1e3f6;
+      padding-left: 25px;
+    }
+    .all__categories {
+      flex: 0 0 140px;
+      padding-right: 10px;
+      margin-right: 0;
+      border-right: 0;
+      .show__category {
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+        border: none;
+        gap: 10px;
+        color: var(--body);
+        height: 45px;
+        font-size: 15px;
+        & > div {
+          flex: 0 0 21px;
+        }
+      }
+      .cat_name {
+      }
+    }
+
+    .categories__dropdown {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      position: absolute;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 3.8px 42.73px 0px rgba(69, 88, 249, 0.4);
+      padding: 5px 0;
+      transform: translateY(-15px);
+      transition: ease all 0.5s;
+      opacity: 0;
+      visibility: hidden;
+      min-width: 140px;
+      z-index: 999;
+      overflow-y: auto;
+      max-height: 500px;
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(190, 190, 190, 0.8);
+        border-radius: 2px;
+      }
+
+      &.active {
+        transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      li {
+        padding: 7px 14px;
+        font-size: 14px;
+      }
+    }
+
+    .search__btn {
+      background-color: var(--blue);
+      border: none;
+      width: 65px;
+      position: absolute;
+      right: -1px;
+      height: calc(100% + 2px);
+      border-radius: 0px 37px 37px 0;
+      top: -1px;
+      svg {
+        width: 29px;
+        height: 29px;
+      }
+    }
+  }
+  .suggestions-box {
+    position: absolute;
+    background-color: #fff;
+    top: 60px;
+    z-index: 99;
+    left: 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 10px !important;
+    max-height: 280px;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    a {
+      display: block;
+      text-align: start;
+      padding: 10px;
+      transition: 0.3s all ease;
+      border-radius: 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: var(--extra-l-green);
+        color: var(--blue);
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        border-radius: 100px;
+        margin-right: 7px;
+      }
+    }
+    .no-data-found {
+      margin-top: 20px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  #user-search {
+    .categories__search__box {
+      padding: 0px;
+      background-color: transparent;
+      flex-wrap: wrap;
+      border: none;
+      gap: 10px;
+      box-shadow: none !important;
+    }
+
+    .categories__search__box > * {
+      width: 100%;
+    }
+
+    .categories__search__box .search__btn {
+      width: 20%;
+      position: inherit;
+      border: 1px solid #e1e3f6;
+      height: 60px;
+      border-radius: 70px;
+    }
+
+    .categories__search__box .all__categories {
+      flex: 0 0 100%;
+      padding: 0px;
+      margin-right: 0px;
+      border: none;
+    }
+
+    .categories__search__box input,
+    .categories__search__box .all__categories .show__category {
+      font-size: 16px;
+      border: 1px solid #e1e3f6;
+      height: 60px;
+      border-radius: 70px;
+      padding: 10px 20px;
+      width: 100%;
+      background-color: #fff;
+    }
+
+    .show__category span {
+      margin-left: auto;
+    }
+
+    .categories__search__box .categories__dropdown {
+      min-width: 100%;
+    }
+
+    .categories__search__box .categories__dropdown li {
+      font-size: 16px;
+    }
+  }
+}

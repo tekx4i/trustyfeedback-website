@@ -1,0 +1,111 @@
+#dashboard_layout_cd {
+  .basicInfo {
+    box-shadow: 0px 0px 30px #17253f1e;
+    border-radius: 25px;
+    padding: 28px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    background-color: #fff;
+
+    .top__info__wrap {
+      gap: 25px;
+
+      .top__l__left {
+        flex: 0 0 185px;
+        position: relative;
+        background-color: var(--d-blue);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: 166px;
+
+        .edit-btn {
+          position: absolute;
+          top: 0;
+          right: -10px;
+          border: 5px solid #fff;
+          background-color: var(--body);
+          color: white;
+          border-radius: 100px;
+          padding: 4px 8px;
+        }
+      }
+
+      .t__listing__c_d {
+        h1 {
+          font-size: 38px;
+          margin-bottom: 2px;
+        }
+
+        .full__d_stars {
+          margin-bottom: 11px;
+
+          span {
+            color: rgba(23, 37, 63, 0.45);
+          }
+        }
+      }
+    }
+
+    .rating__star {
+      display: flex;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .verified {
+      display: flex;
+      margin-top: 15px;
+      background-color: #e7edfa;
+      width: max-content;
+      padding: 5px;
+      border-radius: 7px;
+      font-weight: 500;
+    }
+
+    .website-link {
+      a {
+        color: #4d4d4d;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        > div {
+          width: 100%;
+          text-align: center;
+        }
+        span {
+          color: #4d4d4d;
+          border-bottom: 1px solid #4d4d4d;
+          font-weight: 500;
+        }
+
+        p {
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .basicInfo .top__info__wrap {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .basicInfo .top__info__wrap .top__l__left {
+    flex: 0 0 100%;
+  }
+  .basicInfo {
+    padding: 20px 15px;
+    margin-top: 20px;
+  }
+  .basicInfo .top__info__wrap .t__listing__c_d h1 {
+    font-size: 30px;
+  }
+}

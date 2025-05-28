@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply px-8 w-full text-white font-bold rounded-lg mt-4 py-3 bg-[#962a85] hover:bg-[#b1319e] transition ease-in-out delay-150 duration-300 shadow-lg;
+}
+
+.form {
+  @apply w-full flex flex-col justify-center items-center;
+}
+
+.field {
+  @apply p-2 outline-none border-2 rounded-lg;
+}
+
+.tabs {
+  @apply flex items-center space-x-4 bg-white px-4 py-3 rounded-lg hover:bg-gray-100 transition delay-150 duration-300 font-semibold;
+}
+
+.gradient {
+  @apply bg-gradient-to-r from-pink-200 via-white to-sky-200;
+}
+
+.verifyBtn {
+  @apply px-4 text-white rounded-xl font-bold py-3 bg-[#756cee] shadow-lg hover:shadow-xl hover:bg-[#5c52f3] duration-300 delay-100;
+}
+
+
+
+.scrollable-0 ::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* .PhoneInput{
+  background-color: YELLOW;
+} */
+
+
+.form-control {
+  padding: 27px 20px 27px 45px !important; /* Equivalent to p-3 in Tailwind */
+  border: 1px solid #D1D5DB !important; /* Equivalent to border and border-gray-300 */
+  border-radius: 6px !important; /* Equivalent to rounded-md */
+  width: 100% !important;
+}
+
+.form-control:focus {
+  outline: none !important; /* Equivalent to focus:outline-none */
+  box-shadow: 0 0 0 2px #A78BFA !important; /* Equivalent to focus:ring-2 and focus:ring-purple-400 */
+}
+
+/* React-select */
+.css-1u9des2-indicatorSeparator{
+  display: none;
+}
+.css-13cymwt-control{
+  min-height: 50px!important;
+}
+.css-t3ipsp-control{
+  min-height: 50px!important;
+}

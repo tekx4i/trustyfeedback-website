@@ -1,0 +1,27 @@
+.best__verified__companies {
+    background-color: #EAF0F8;
+    padding: 80px 10px 274px;
+    border-radius: 35px;
+    margin: 0 30px;
+
+    .top__insurance__companies {
+        padding-bottom: 70px;
+    }
+
+    .top__verifiedbanks {
+        margin: 0 -10px;
+    }
+}
+
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .best__verified__companies {
+        padding-top: 70px;
+        margin: 0 20px;
+    }
+}
+@media screen and (max-width:767px){
+    .best__verified__companies {
+        padding: 50px 10px 240px;
+        margin: 0 10px;
+    }
+}

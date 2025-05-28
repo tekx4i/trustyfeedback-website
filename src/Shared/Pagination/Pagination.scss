@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  gap: 15px;
+
+  .page-button {
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 100px;
+    width: 25px;
+    height: 25px;
+    &:hover {
+      color: var(--d-blue);
+    }
+
+    &.active {
+      background-color: var(--d-blue);
+      color: #fff;
+      border-radius: 50%;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+  }
+
+  .next-prev {
+    background-color: #eff3f7;
+    padding: 0;
+    border-radius: 3px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

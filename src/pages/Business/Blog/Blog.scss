@@ -1,0 +1,79 @@
+.filter__bar {
+  .filter__wrap {
+    padding: 9px;
+    border-radius: 30px;
+    background-color: #eaf0f8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+
+    button {
+      background-color: #fff;
+      transition: ease all 0.5s;
+      border: 1px solid #d8d8e8;
+      border-radius: 30px;
+      font-size: 20px;
+      color: #000;
+      padding: 7px 22px;
+      width: 100%;
+      white-space: nowrap;
+
+      &.active,
+      &:hover {
+        background-color: var(--blue);
+        color: #fff;
+        border-color: transparent;
+      }
+    }
+  }
+}
+
+.scrollable-0 {
+  &::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.page___banner {
+  padding: 100px 20px;
+  background: url(../../../assets/BusinessSite/s_banner_bg_0.png) var(--d-blue) no-repeat center center;
+  background-size: cover;
+}
+
+.select___filterarea {
+  h3 {
+    font-size: 26px;
+  }
+
+  .s__filter__wrap {
+    max-width: 420px;
+
+    select {
+      height: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .filter__bar .filter__wrap button {
+    font-size: 15px;
+    padding: 7px 22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filter__bar .filter__wrap button {
+    font-size: 11px;
+    padding: 7px 9px;
+  }
+  .filter__bar .filter__wrap {
+    padding-left: 5px;
+    width: max-content;
+  }
+
+  .page___banner {
+    padding: 70px 20px;
+  }
+}

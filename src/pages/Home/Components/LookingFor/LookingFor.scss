@@ -1,0 +1,92 @@
+.what__looking__for {
+  padding: 65px 0 60px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #000000;
+    max-width: 1170px;
+    height: 1px;
+    opacity: 0.1;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .what__looking__head {
+    margin-bottom: 20px;
+  }
+
+  .single__service__box {
+    padding: 30px 7.5px;
+
+    a {
+      padding: 34px 10px;
+      box-shadow: 0px 0px 25px 0px #17253f1a;
+      border-radius: 25px;
+      background: #ffff;
+      display: block;
+      border: 1.5px solid transparent;
+      position: relative;
+      min-width: 182px;
+
+      &::before {
+        content: "";
+        background: url(/src/assets/services-box-arrow_0.svg) no-repeat center center;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        bottom: -13px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        transition: ease all 0.5s;
+      }
+
+      &:hover {
+        border-color: var(--blue);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      .service__icon {
+        height: 40px;
+        max-width: 40px;
+        margin: 0 auto 13px;
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.reviews__default__slider {
+  .slick-track {
+    display: flex;
+
+    .slick-slide {
+      float: none;
+      height: auto;
+
+      & > div {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .what__looking__for {
+    padding: 25px 0 40px;
+  }
+  .what__looking__head .row {
+    gap: 20px;
+  }
+}

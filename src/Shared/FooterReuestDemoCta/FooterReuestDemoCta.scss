@@ -1,0 +1,41 @@
+.request__demo__cta {
+    padding: 60px 20px 50px;
+    background: url(../../assets/BusinessSite/requestdemoverly.svg) #29378C no-repeat center center;
+    background-size: cover;
+    margin-bottom: -158px;
+    position: relative;
+    z-index: 1;
+
+
+    .redemo__form {
+        max-width: 660px;
+
+        input {
+            height: 75px;
+            color: var(--body);
+        }
+
+        .default__btn {
+            position: absolute;
+            right: 10px;
+            top: 11px;
+        }
+    }
+    p{
+        margin-bottom: 32px;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .request__demo__cta .redemo__form .default__btn {
+        position: inherit;
+        width: 100%;
+        margin-top: 20px;
+        height: 60px;
+    }
+    .request__demo__cta .redemo__form input {
+        height: 60px;
+    }
+    
+}

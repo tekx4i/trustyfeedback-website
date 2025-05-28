@@ -1,0 +1,106 @@
+.testimonial__reviews {
+    background-color: var(--l-blue);
+    padding: 70px 20px 130px;
+
+    .testimonial__box {
+        .testimonial__wrap {
+            padding: 0 15px;
+
+            .testimonial__head {
+                background: #FFFFFF;
+                border-radius: 40px;
+                padding: 10px;
+                max-width: 350px;
+                gap: 10px;
+                margin-bottom: 9px;
+
+                .testi_rating {
+                    margin-left: auto;
+                    display: flex;
+                    align-items: center;
+                    line-height: 1;
+                    color: rgba(23, 37, 63, 0.5);
+                    gap: 3px;
+                }
+
+                .test__img {
+                    flex: 0 0 39px;
+
+                    img {
+                        border-radius: 50%;
+                        height: 39px;
+                        width: 39px;
+                    }
+                }
+
+                h6 {
+                    font-family: 500;
+                }
+            }
+
+            .testimonial__content {
+                padding: 37px 52px 50px 64px;
+                border-radius: 20px;
+                background-color: #fff;
+                position: relative;
+
+                p {
+                    line-height: 1.75;
+                }
+
+                &::before,
+                &::after {
+                    content: '';
+                    background: url(../../../../assets/Aboutus/upQoute_0.svg) no-repeat center center;
+                    height: 15px;
+                    width: 19px;
+                    position: absolute;
+                    left: 27px;
+                    top: 27px;
+                }
+
+                &::after {
+                    background-image: url(../../../../assets/Aboutus/downQoute_0.svg);
+                    left: inherit;
+                    right: 27px;
+                    top: inherit;
+                    bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .faqs__area .accordion__wrap .accordion__item .accordion__title {
+        padding: 20px 0;
+        font-size: 18px;
+        gap: 15px;
+    }
+
+    .testimonial__reviews {
+        padding: 40px 0px 94px;
+    }
+
+    .testimonial__reviews .testimonial__box .testimonial__wrap .testimonial__content {
+        padding: 35px 20px 30px 20px;
+    }
+
+    .testimonial__reviews .testimonial__box .testimonial__wrap .testimonial__content::before {
+        left: 23px;
+        top: 12px;
+    }
+
+    .testimonial__reviews .testimonial__box .testimonial__wrap .testimonial__content::after {
+
+        right: 13px;
+        bottom: 24px;
+    }
+
+    .faqs__area .accordion__wrap .accordion__item .accordion__arrow-wrapper {
+        height: 30px;
+        width: 30px;
+        flex: 0 0 30px;
+        margin-right: 2px;
+    }
+}

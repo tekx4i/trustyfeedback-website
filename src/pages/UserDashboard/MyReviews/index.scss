@@ -1,0 +1,340 @@
+.filter_dropdown {
+  position: relative;
+  .p_btn {
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 100px;
+    height: 35px;
+    padding: 0 19px;
+    .dropdown {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.review-tabs {
+  display: flex;
+  gap: 10px;
+  margin-top: 50px;
+  .tab-btn {
+    border-radius: 100px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    transition: 0.3s all ease;
+    &:hover {
+      background-color: #ccc;
+      color: #252525;
+      border: 1px solid #ccc;
+    }
+    &.active {
+      background-color: var(--d-blue);
+      color: #fff;
+      border: 1px solid var(--d-blue);
+    }
+  }
+}
+#reviews_main_lay {
+  .main__review__box {
+    padding: 0 10px 20px;
+    .main__review__wrap {
+      background: #fff;
+      padding: 20px;
+      border-radius: 25px;
+    }
+    .reviews_dangerous_html {
+      min-height: 55px;
+    }
+    .mreview__head {
+      gap: 15px;
+      margin-bottom: 18px;
+
+      .mreview__img {
+        width: 55px;
+        height: 55px;
+        background: #fff;
+        border-radius: 100px;
+        flex: 0 0 55px;
+        position: relative;
+
+        img {
+          width: 55px;
+          height: 55px;
+          border-radius: 100px;
+          border: 1px solid #17253f33;
+        }
+
+        .user_verified {
+          position: absolute;
+          right: -6px;
+          top: -8px;
+        }
+      }
+
+      h4 {
+        margin-bottom: 3px;
+        color: #000;
+        line-height: 1.1;
+      }
+
+      a {
+        font-size: 15px;
+        line-height: 1.1;
+        opacity: 0.6;
+        color: #000;
+      }
+    }
+
+    .review_stars {
+      margin-bottom: 10px;
+      gap: 13px;
+    }
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+    p {
+      margin-bottom: 5px;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    a.read_review {
+      font-size: 14px;
+      display: inline-flex;
+      color: var(--d-blue);
+      font-weight: 600;
+      gap: 3px;
+
+      svg {
+        path {
+          fill: var(--d-blue);
+        }
+      }
+    }
+    .review_bottom {
+      padding-top: 20px;
+      border-top: 1px solid rgba(42, 42, 42, 0.1);
+      margin-top: 20px;
+      .revies_buss_logo {
+        flex: 0 0 45px;
+        img {
+          height: 45px;
+          width: 45px;
+          border-radius: 50%;
+        }
+      }
+      .review__bottom__meta {
+        padding-left: 5px;
+        h5 {
+          font-size: 15px;
+          font-weight: 600;
+          line-height: 1.2;
+          margin-bottom: 5px;
+          font-family: var(--poppins);
+        }
+        p {
+          font-size: 15px;
+          line-height: 1.3;
+          font-weight: 400;
+          font-family: var(--poppins);
+          display: flex;
+          gap: 5px;
+        }
+      }
+      .review__time {
+        font-size: 13px;
+        opacity: 0.5;
+        margin-left: auto;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+// detailed review
+#detailed__rview {
+  .review__single__page {
+    padding: 40px 0 60px;
+    .rd__head {
+      color: rgba(23, 37, 63, 0.5);
+      margin-bottom: 30px;
+      a {
+        color: var(--body);
+      }
+    }
+  }
+
+  .comment__card {
+    background-color: #fff !important;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+
+    .user__img {
+      flex: 0 0 49px;
+
+      img {
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+      }
+    }
+
+    .user-detail {
+      align-self: center;
+      margin-left: 10px;
+
+      h6 {
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+
+    .rating__star {
+      display: flex;
+      align-self: center;
+
+      svg {
+        margin-right: 2px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .comment__detail {
+      margin-top: 24px;
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+      }
+      h6 {
+        font-weight: 700;
+        color: #000;
+      }
+
+      p {
+        color: #000;
+      }
+
+      .comment__date {
+        color: #000;
+        opacity: 0.7;
+        font-size: 14px;
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .bottom__share__btn {
+      button {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        outline: none;
+        color: rgba(23, 37, 63, 0.7);
+        background-color: transparent;
+      }
+    }
+
+    hr {
+      margin: 19px 0 12px;
+    }
+  }
+
+  .replied___boxs {
+    margin-top: 35px;
+
+    .reply__box {
+      background-color: #eaf0f8;
+      border-radius: 20px;
+      padding: 19px 25px 18px;
+      border-left: 4px solid var(--d-blue);
+
+      p {
+        margin-bottom: 0;
+        max-width: 900px;
+      }
+
+      h6 {
+        font-weight: 700;
+        margin-bottom: 17px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .review_bottom {
+      #actions_btn {
+        margin-top: 20px;
+      }
+    }
+    .comment__card {
+      padding: 20px 15px;
+      .d-flex {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+    }
+    .comment__card .comment__detail {
+      margin-top: 15px;
+    }
+  }
+}
+
+// edit and delete btns
+.edit_btn_layout {
+  display: flex;
+  gap: 4px;
+  color: var(--body);
+  opacity: 70%;
+  font-family: var(--poppins);
+  font-size: 15px;
+  border: 0;
+  background-color: transparent;
+  svg {
+    margin-top: 2px;
+  }
+}
+.delete_btn_layout {
+  display: flex;
+  gap: 4px;
+  color: var(--body);
+  opacity: 70%;
+  font-family: var(--poppins);
+  font-size: 15px;
+  border: 0;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .bg_layout {
+    margin: 10px;
+  }
+  .recent_review {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .review-tabs {
+    .tab-btn {
+      font-size: 13px !important;
+    }
+  }
+}

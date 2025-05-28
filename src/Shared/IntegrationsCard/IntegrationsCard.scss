@@ -1,0 +1,47 @@
+.integrations__card {
+  .integrations__card__inner {
+    padding: 16px;
+    background-color: #eff3f7;
+    border-radius: 25px;
+    .logo_inte {
+      width: auto;
+      height: 50px;
+    }
+    .in__card__img {
+      height: 100px;
+      background-color: #fff;
+      border-radius: 15px;
+      border: 1px solid rgba(23, 37, 63, 0.2);
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      color: #000;
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: #000;
+      font-size: 15px;
+      opacity: 0.5;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+}
+
+.integrations__card.integrations__white__card .integrations__card__inner {
+  background-color: #fff;
+}
+
+.integrations__card.integrations__white__card .integrations__card__inner .in__card__img {
+  background-color: #eff3f7;
+}

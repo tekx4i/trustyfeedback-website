@@ -1,0 +1,236 @@
+.aus__cta__wrap {
+  background-color: #17253f;
+  border-radius: 25px;
+  padding: 0px 38px 0 60px;
+
+  .aus__cta__content {
+    padding: 66px 50px 70px 0;
+
+    h2 {
+      margin-bottom: 5px;
+    }
+
+    p {
+      margin-bottom: 33px;
+    }
+  }
+  .green__btn:hover {
+    color: black !important;
+  }
+  .aboutus__img {
+    &::before {
+      content: "";
+      display: block;
+      background: #29378c;
+      position: absolute;
+      height: 320px;
+      width: 320px;
+      border-radius: 50%;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .hows__order__box {
+    padding: 14px;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    max-width: 180px;
+    left: -30px;
+    z-index: 11;
+    top: 55px;
+
+    .hows_head {
+      margin-bottom: 7px;
+      gap: 10px;
+
+      .hows_icon {
+        flex: 0 0 37px;
+
+        img {
+          height: 37px;
+          width: 37px;
+          border-radius: 50%;
+        }
+      }
+
+      h6 {
+        color: var(--body);
+        font-size: 14px;
+        line-height: 1.28;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      color: var(--body);
+      line-height: 1.2;
+      opacity: 0.3;
+      margin-bottom: 5px;
+    }
+
+    .startsList {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        gap: 2px;
+        cursor: pointer;
+
+        li {
+          opacity: 0.2;
+          transition: ease all 0.5s;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .direction__right {
+    position: absolute;
+    left: 0;
+    top: 193px;
+  }
+
+  .review_qoute {
+    background: #e7f4ef;
+    border-radius: 70px;
+    position: absolute;
+    max-width: 132px;
+    padding: 9px 10px 5px 20px;
+    z-index: 2;
+    top: 116px;
+    right: 12px;
+    width: 100%;
+
+    p {
+      color: var(--body);
+      font-size: 10px;
+      line-height: 1;
+      margin-bottom: 6px;
+      font-weight: 500;
+    }
+
+    .qoute__star {
+      line-height: 0.7;
+
+      svg {
+        max-width: 89px;
+      }
+    }
+  }
+
+  .aboutus__img {
+    padding-right: 20px;
+  }
+}
+
+.about__us__cta {
+  margin-top: -180px;
+  position: relative;
+  z-index: 1;
+}
+
+body:has(.about__us__cta):not(body:has(.aboutcta__center)) .bg-color-business {
+  padding-top: 270px !important;
+}
+
+body:has(.bg-color-business) .about__us__cta {
+  background-color: var(--body);
+  border-radius: 25px;
+  margin: 0 30px -200px;
+}
+
+body:has(.aboutcta__center) .about__us__cta {
+  margin-bottom: 0 !important;
+}
+
+body:has(.bg-color-business) .aus__cta__wrap {
+  padding: 0;
+}
+
+body:has(.bg-color-business) .aus__cta__wrap .review_qoute {
+  // background-color: var(--d-blue);
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .aus__cta__wrap {
+    padding: 40px 30px 0;
+  }
+
+  .aus__cta__wrap .aus__cta__content {
+    padding: 0;
+  }
+
+  .aus__cta__wrap .aboutus__img {
+    padding-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .aus__cta__wrap .aboutus__img::before {
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+
+  .about__us__cta .col-g-5 {
+    margin: 0 50px;
+    flex-shrink: inherit;
+  }
+  .aus__cta__wrap .hows__order__box {
+    left: 12px;
+  }
+  .aus__cta__wrap .direction__right {
+    left: 12px;
+  }
+  body:has(.bg-color-business) .about__us__cta {
+    margin: 0 10px -200px;
+    padding: 40px 18px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .aus__cta__wrap {
+    padding: 40px 20px 0;
+  }
+
+  .aus__cta__wrap .aus__cta__content {
+    padding: 0;
+  }
+
+  .aus__cta__wrap .review_qoute {
+    top: inherit;
+    right: 12px;
+    bottom: 30px;
+  }
+
+  .aus__cta__wrap .aboutus__img {
+    padding: 50px 0 0;
+  }
+
+  .aus__cta__wrap .direction__right {
+    display: none;
+  }
+
+  .aus__cta__wrap .hows__order__box {
+    left: 20px;
+    top: 25px;
+  }
+  body:has(.bg-color-business) .about__us__cta {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  body:has(.bg-color-business) .aus__cta__wrap {
+    padding: 40px 8px 0;
+  }
+}

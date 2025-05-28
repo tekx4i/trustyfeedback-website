@@ -1,0 +1,167 @@
+.how_works_hero {
+  padding: 40px 0 100px;
+
+  .hows_work_top {
+    margin-bottom: 60px;
+
+    p {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  }
+
+  .container {
+    max-width: 940px;
+  }
+
+  .hw_image {
+    margin-bottom: 34px;
+
+    img {
+      border-radius: 16px;
+      height: 418px;
+      width: 100%;
+    }
+  }
+
+  .hw_content {
+    margin-bottom: 34px;
+
+    h3 {
+      font-size: 24px;
+      line-height: 1.5;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 17px;
+      margin: 0;
+    }
+  }
+
+  .hw__bottom {
+    .slide__wrap {
+      width: 33.33%;
+    }
+  }
+}
+
+.how_works_icon_box {
+  background-color: #eaf0f8;
+  padding: 80px 0 60px;
+  border-radius: 25px;
+
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+
+  .hw_ibx_details {
+    border-radius: 38px;
+    background-color: #fff;
+    padding: 30px 26px 40px 26px;
+    height: 100%;
+
+    span {
+      flex: 0 0 40px;
+    }
+  }
+
+  .hw_ibx_header {
+    gap: 15px;
+    margin-bottom: 19px;
+
+    h3 {
+      font-size: 22px;
+      line-height: 1.5;
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+
+  .hw_text {
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #000000cc;
+      margin: 0;
+    }
+  }
+}
+
+.how_works_image_box {
+  padding: 100px 0;
+
+  .hw_image_area {
+    img {
+      border-radius: 15px;
+      width: 100%;
+      border: 1px solid #17253f33;
+    }
+  }
+
+  .hw_image_content {
+    max-width: 492px;
+
+    h3 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 11px;
+    }
+
+    h5 {
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hw_image_content {
+    margin-bottom: 40px;
+  }
+
+  .how_works_icon_box {
+    .col-md-6:not(:last-child) {
+      .hw_ibx_details {
+        margin-bottom: 20px !important;
+      }
+    }
+  }
+
+  .hw_image_area img,
+  .hw_image img {
+    height: auto !important;
+  }
+
+  .how_works_hero .hows_work_top p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .how_works_hero .hows_work_top {
+    margin-bottom: 37px;
+  }
+
+  .how_works_hero .hw__bottom .slide__wrap {
+    width: 100%;
+  }
+
+  .hw__bottom {
+    row-gap: 0px;
+  }
+
+  .how_works_icon_box {
+    padding: 50px 0;
+  }
+
+  .how_works_image_box {
+    padding: 50px 0 30px;
+  }
+
+  .how_works_image_box .row {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+}

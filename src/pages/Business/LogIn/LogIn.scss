@@ -1,0 +1,58 @@
+.log__in__page {
+  padding: 80px 0;
+  .container {
+    max-width: 756px;
+  }
+
+  .login__head {
+    margin-bottom: 24px;
+
+    h1 {
+      font-size: 40px;
+      line-height: 1.25;
+      max-width: 395px;
+      margin: 0 auto 8px auto;
+    }
+
+    p {
+      color: #717171;
+    }
+  }
+
+  .login__form__area {
+    box-shadow: 0px 4px 43px 0px #04da8d40;
+    border-radius: 23px;
+    padding: 55px 92px;
+    box-sizing: border-box;
+    background: #fff;
+  }
+
+  a.logo_img {
+    margin-bottom: 15px;
+    width: 300px;
+  }
+
+  .overlap__text {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.8;
+    padding: 14px 0 15px;
+  }
+
+  .stype__wrap {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .log__in__page {
+    padding: 40px 0 60px;
+  }
+  .log__in__page .login__form__area {
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,27 @@
+.toolsLogo__area {
+    padding: 100px 0;
+
+    .slick-track {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .toolslogo__slider {
+        margin-bottom: 60px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .toolsLogo__area {
+        padding: 60px 0;
+    }
+
+    .toolsLogo__area .toolslogo__slider {
+        margin-bottom: 40px;
+    }
+    .toolsLogo__area .slick-track {
+        gap: 20px;
+    }
+}

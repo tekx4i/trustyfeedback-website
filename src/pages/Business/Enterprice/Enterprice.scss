@@ -1,0 +1,190 @@
+.s__business__banner {
+  background-image: url(../../../assets/BusinessSite/s_banner_bg_0.png);
+  padding-left: 12px;
+  padding-right: 12px;
+
+  .sb_banner_content {
+    padding: 30px 0;
+
+    h1 {
+      margin-bottom: 13px;
+    }
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+}
+
+.sbc_wrapper__area {
+  position: relative;
+
+  .client__img {
+    flex: 0 0 35px;
+
+    img {
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+    }
+  }
+
+  .client__info {
+    h4 {
+      color: #17253f;
+      font-size: 15px;
+      font-weight: 500;
+      margin-bottom: 0;
+      line-height: 1.1;
+    }
+
+    p {
+      color: #17253f99;
+      font-size: 12px;
+      margin-bottom: 1px;
+    }
+
+    span {
+      display: flex;
+      gap: 1px;
+    }
+  }
+}
+
+.sb_client_review {
+  position: absolute;
+  bottom: 74px;
+}
+
+.sbc_wrapper__area {
+  gap: 9px;
+  width: 195px;
+  background-color: #fff;
+  border-radius: 15px;
+  height: 82px;
+  padding: 12px 17px 14px 17px;
+  margin-bottom: 12px;
+}
+
+.green__btn:hover {
+  color: black !important;
+}
+
+.business__iwc__area {
+  background: url(../../../assets/BusinessSite/insights_img.png) left bottom / auto no-repeat;
+  padding: 80px 0;
+  background-color: #eff3f7;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .sm__image {
+    img {
+      width: 100%;
+      border-radius: 29px;
+      box-shadow: 0px 5px 31px 0px #00000012;
+    }
+  }
+
+  h4 {
+    color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  p {
+    strong {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+  }
+
+  .sm__content {
+    max-width: 515px;
+  }
+
+  .default__btn {
+    margin-top: 12px;
+    min-width: 181px;
+  }
+
+  .sr__image_wrapper {
+    position: relative;
+
+    .small_review_box {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: max-content;
+    }
+  }
+}
+
+.have__review__transparent {
+  .sbc_wrapper__area {
+    background-color: #00000033;
+    backdrop-filter: blur(34px);
+    height: 95px;
+    width: 228px;
+    padding: 16px 20px;
+
+    h4 {
+      color: #fff;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.pc_img.text-start {
+  background-color: #eff3f7;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .s__business__banner .s_banner_image {
+    position: relative;
+    right: -80px;
+  }
+
+  .rs_client__review_sec {
+    left: -71px;
+    bottom: 9px;
+  }
+
+  .business__iwc__area .sr__image_wrapper .small_review_box {
+    right: -134px;
+  }
+
+  .business__iwc__area.fill__sec {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sbc_wrapper__area {
+    gap: 9px;
+    width: max-content;
+    padding: 10px;
+  }
+
+  .s_banner__wrapper {
+    margin-top: 27px;
+  }
+
+  .business__iwc__area {
+    padding: 60px 0;
+  }
+
+  .business__iwc__area .row {
+    row-gap: 25px;
+  }
+}

@@ -1,0 +1,134 @@
+.faqs__area {
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .accordion__wrap {
+    .accordion__item {
+      border-bottom: 1px solid rgba(23, 37, 63, 0.2);
+      overflow: hidden;
+      transition: all 0.3s ease;
+
+      &:last-child {
+        border-bottom: none;
+
+        .accordion__title {
+          padding-bottom: 0;
+        }
+      }
+
+      &.active {
+        .accordion__content {
+          max-height: 100px;
+          opacity: 1;
+          margin-bottom: 20px;
+        }
+
+        .accordion__title {
+          padding-bottom: 10px;
+        }
+
+        .accordion__arrow-wrapper {
+          background-color: rgba(214, 214, 214, 1);
+          transform: rotate(-90deg);
+
+          svg path {
+            fill: #17253f;
+          }
+        }
+      }
+
+      &.inactive {
+        .accordion__content {
+          max-height: 0;
+          opacity: 0;
+        }
+      }
+
+      .accordion__title {
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 30px 0;
+        font-weight: 600;
+        font-size: 22px;
+        align-items: center;
+      }
+
+      .accordion__content {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.3s ease, opacity 0.3s ease;
+        max-width: 930px;
+      }
+
+      .accordion__arrow-wrapper {
+        height: 40px;
+        width: 40px;
+        flex: 0 0 40px;
+        background-color: var(--d-blue);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(0deg);
+        transition: ease all 0.5s;
+
+        svg {
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.faqs__area.bus__faqs .accordion__wrap .accordion__item .accordion__arrow-wrapper {
+  height: 31px;
+  width: 31px;
+  flex: 0 0 31px;
+  background-color: rgba(23, 37, 63, 0.1);
+  transform: rotate(0deg) !important;
+}
+
+.faqs__area.bus__faqs .accordion__wrap .accordion__item.active .accordion__arrow-wrapper {
+  background-color: var(--body);
+
+  svg {
+    rect {
+      fill: #fff;
+
+      &:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+}
+
+.faqs__area.bus__faqs {
+  padding: 100px 0;
+
+  h2 {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faqs__area .accordion__wrap .accordion__item .accordion__title {
+    padding: 20px 0;
+    font-size: 18px;
+    gap: 15px;
+  }
+
+  .faqs__area .accordion__wrap .accordion__item .accordion__arrow-wrapper {
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+  }
+
+  .faqs__area.bus__faqs {
+    padding: 50px 0;
+  }
+}

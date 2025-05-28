@@ -1,0 +1,146 @@
+.business-banner {
+  background-image: url(../../../../../assets/BusinessSite/bg-gradient_0.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  border-radius: 25px;
+  margin: 0 50px;
+
+  h1,
+  p {
+    color: var(--white);
+  }
+
+  .banner-left-side {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 596px;
+    margin-left: auto;
+    padding: 0 42px 0 20px;
+  }
+
+  .banner__slider__wrap {
+    padding-right: 20px;
+  }
+
+  .slick-dots {
+    text-align: start;
+    padding-left: 20px;
+  }
+
+  .slick-dots li button {
+    background-color: #8d7867;
+    width: 50px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+  }
+
+  .slick-dots {
+    bottom: 20px;
+    left: 0 !important;
+  }
+
+  .slick-dots li.slick-active button {
+    width: 80px;
+    background-color: #fff;
+  }
+
+  .banner-slide-img {
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .opt-slide {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+
+    .slider-img-card {
+      margin-top: 14px;
+      background-color: var(--white);
+      border-radius: 20px;
+      padding: 15px;
+      width: max-content;
+
+      min-width: 250px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      h6 {
+        line-height: 13px;
+      }
+
+      img {
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+      }
+
+      .stars {
+        margin-top: -2px;
+        display: flex;
+        gap: 1px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .business-banner .banner-left-side {
+    padding-right: 0;
+  }
+
+  .business-banner {
+    margin: 0 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .business-banner .banner-left-side {
+    padding-right: 0;
+  }
+
+  .business-banner {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .business-banner {
+    padding: 50px 20px;
+    margin: 0 10px;
+  }
+
+  .business-banner .banner-left-side {
+    padding: 0;
+  }
+
+  .business-banner .banner-slide-img {
+    height: 400px;
+  }
+
+  .business-banner .slick-dots li button {
+    width: 20px;
+  }
+
+  .business-banner .banner__slider__wrap {
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .business-banner .opt-slide .slider-img-card {
+    margin-top: 10px;
+    padding: 10px;
+    min-width: 190px;
+  }
+
+  .business-banner .slick-dots li.slick-active button {
+    width: 40px;
+  }
+}

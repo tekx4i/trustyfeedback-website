@@ -1,0 +1,70 @@
+.integrations__cards__area {
+    background-color: #EFF3F7;
+    padding: 120px 20px 80px;
+    margin-top: -40px;
+
+    .row {
+        row-gap: 25px;
+    }
+}
+
+
+.integrations__filters__area {
+    padding: 134px 0 100px;
+
+    .integrations__sidebar {
+        flex: 0 0 280px;
+    }
+
+    .integrations__filter__results {
+        width: 100%;
+        flex-shrink: initial;
+
+        .row {
+            row-gap: 20px;
+        }
+    }
+}
+
+
+.integrationsSearch {
+    margin-bottom: 25px;
+
+    input {
+        height: 75px;
+        border-radius: 70px;
+        background-color: #fff;
+        padding: 10px 30px;
+        border-color: #E1E3F6;
+    }
+
+    .bseacrh__btn {
+        background-color: var(--blue);
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80px;
+        border: none;
+        border-radius: 0 100px 100px 0;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .integrations__filters__area .row {
+        flex-wrap: wrap !important;
+        row-gap: 30px;
+    }
+    .integrationsSearch input {
+        height: 68px;
+        font-size: 13px;
+    }
+    .integrations__filters__area .integrations__sidebar {
+        flex: 0 0 auto;
+    }
+
+    .integrations__filters__area {
+        padding: 80px 0;
+    }
+}

@@ -1,0 +1,23 @@
+.content__cta {
+    padding: 25px 0 0;
+    .c__cta__content{
+        padding: 20px 0;
+    }
+     .c_cta__img{
+         .halfcircle{
+            position: absolute;
+            bottom: 0;
+            z-index: -1;
+         }
+     }
+}
+
+
+@media screen and (max-width:767px){
+    .content__cta .row{
+        flex-direction: column-reverse;
+    }
+    .content__cta{
+        padding-bottom: 30px;
+    }
+}

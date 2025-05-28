@@ -1,0 +1,80 @@
+.customer__home__banner {
+    padding: 150px 0 100px;
+
+
+
+
+
+    .banner__content {
+        max-width: 810px;
+
+        .arr_direction {
+            position: absolute;
+            top: 80px;
+            right: -60px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+
+            strong {
+                font-weight: 700;
+            }
+
+        }
+
+        p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+
+
+
+
+//   Resposnive
+
+
+
+@media screen and (max-width:1199px) and (min-width:1024px) {
+
+
+    .customer__home__banner .banner__content {
+        max-width: 510px;
+    }
+    .customer__home__banner .banner__content .arr_direction {
+        right: -108px;
+    }
+}
+
+
+@media screen and (max-width:1023px) {
+    .customer__home__banner .banner__content .arr_direction{
+        display: none;
+    }
+
+
+}
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .customer__home__banner {
+        padding: 100px 0 50px;
+    }
+
+    .customer__home__banner .banner__content p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .customer__home__banner {
+        padding: 60px 0;
+    }
+
+    .customer__home__banner .banner__content p {
+        font-size: 17px;
+    }
+}

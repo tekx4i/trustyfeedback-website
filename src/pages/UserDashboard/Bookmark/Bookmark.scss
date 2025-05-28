@@ -1,0 +1,50 @@
+#bookmark_reviews {
+  .filter__dashboard {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-radius: 14px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 9999;
+    button {
+      width: 100%;
+      padding: 10px;
+      border: 0;
+      background-color: transparent;
+      border-radius: 10px;
+      &:hover {
+        background-color: #f9f9f9;
+      }
+    }
+  }
+}
+
+.slider {
+  .slick-list {
+    .slick-track {
+      margin-left: 0 !important;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #bookmark-title {
+    margin-top: 30px;
+  }
+  #reviews {
+    margin: 30px 20px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #bookmark-title {
+    margin-top: 30px;
+  }
+  #reviews {
+    margin: 30px 20px 0;
+  }
+}

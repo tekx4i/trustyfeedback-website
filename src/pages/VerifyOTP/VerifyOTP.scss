@@ -1,0 +1,20 @@
+#otp__verification {
+  img {
+    width: auto;
+    height: 100px;
+  }
+  .default__btn-blue {
+    border-radius: 100px;
+    background-color: var(--d-blue);
+    color: #fff;
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 18px;
+    border: 0;
+    padding: 10px;
+    transition: 0.3s all ease;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

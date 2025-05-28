@@ -1,0 +1,53 @@
+.attacknew__cus__banner {
+    background-image: url(../../../assets/BusinessSite/s_banner_bg_0.png);
+    padding: 30px 20px 0;
+    position: relative;
+    z-index: 1;
+
+    .sb_banner_content {
+        max-width: 490px;
+
+        h1 {
+            margin-bottom: 13px;
+            line-height: 1.2;
+        }
+
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    .s_banner_image {
+        position: relative;
+        z-index: 11;
+    }
+
+    .small_review_box {
+        position: absolute;
+        left: 0;
+        z-index: 111;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        height: max-content;
+    }
+}
+
+
+.reuest__demo__cta {
+    background-color: #EFF3F7;
+    padding: 120px 0 80px;
+    margin-top: -40px;
+
+    .container {
+        max-width: 915px;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    .reuest__demo__cta {
+        padding: 80px 0 50px;
+    }
+}

@@ -1,0 +1,174 @@
+.pricing__banner__area {
+  background: url(../../../assets/bg__pricing__overly.png) #29378c no-repeat center center;
+  background-size: cover;
+  padding: 54px 0 154px;
+}
+
+// Pricing Section
+.pricing__detail__area {
+  margin-top: -115px;
+
+  .row {
+    row-gap: 25px;
+  }
+
+  .pricing__boxs {
+    padding: 20px;
+    background-color: #f0f1f8;
+    border-radius: 20px;
+
+    .pr__head {
+      gap: 16px;
+      margin-bottom: 20px;
+
+      .pr__icon {
+        flex: 0 0 52px;
+        height: 52px;
+        background-color: #fff;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.gr__icon {
+          background-color: var(--blue);
+        }
+      }
+
+      h4 {
+        font-size: 24px;
+      }
+    }
+
+    .pr__price {
+      font-size: 38px;
+      font-weight: 600;
+      display: flex;
+      line-height: 1;
+      gap: 6px;
+      align-items: flex-end;
+      margin-bottom: 5px;
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        position: relative;
+        top: -7px;
+        opacity: 0.6;
+      }
+    }
+
+    .pr__duration {
+      font-size: 15px;
+      font-weight: 600;
+      opacity: 0.7;
+      border-bottom: 1px solid #cbe1d9;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+    }
+
+    ul {
+      margin-bottom: 14px;
+
+      li {
+        margin-bottom: 6px;
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.66;
+      opacity: 0.8;
+      margin-bottom: 17px;
+    }
+
+    .default__btn {
+      background-color: transparent;
+      color: var(--body);
+      border: 1px solid var(--body);
+
+      &:hover {
+        border-color: transparent;
+        background-color: var(--body);
+        color: #fff;
+      }
+
+      &::after {
+        background-color: var(--body);
+      }
+
+      &.green__btn {
+        background-color: var(--blue);
+        border-color: transparent !important;
+      }
+    }
+  }
+}
+
+// How Pricing work
+
+.how__pricing__work {
+  padding: 100px 0;
+
+  .row {
+    row-gap: 40px;
+  }
+
+  .how__p__work__box {
+    .howp__icon {
+      min-height: 37px;
+      margin-bottom: 18px;
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: calc(100% - 73px);
+        height: 1px;
+        border-bottom: 1px dashed #4558f9;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      svg {
+        max-height: 37px;
+      }
+    }
+
+    h4 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 7px;
+    }
+
+    p {
+      opacity: 0.8;
+      margin: 0;
+    }
+  }
+
+  .default__btn {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .how__pricing__work .col-lg-3:last-child .how__p__work__box .howp__icon::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .how__pricing__work {
+    padding: 50px 0;
+  }
+  .pricing__banner__area {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

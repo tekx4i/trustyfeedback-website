@@ -1,0 +1,33 @@
+#my_responds {
+  .p_btn {
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 100px;
+    height: 35px;
+    padding: 0 19px;
+    min-width: 130px;
+    .dropdown {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  input {
+    min-width: 130px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #card {
+    margin: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #respond {
+    margin: 30px 30px 0;
+  }
+  #card {
+    margin: 0px 20px;
+  }
+}

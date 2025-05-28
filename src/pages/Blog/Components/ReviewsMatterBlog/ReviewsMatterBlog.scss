@@ -1,0 +1,13 @@
+.reviews__matter__blogs {
+    padding-bottom: 130px;
+
+    .blog__box__wrap {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .reviews__matter__blogs {
+        padding-bottom: 110px;
+    }
+}

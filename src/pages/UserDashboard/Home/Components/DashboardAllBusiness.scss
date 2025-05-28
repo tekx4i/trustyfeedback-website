@@ -1,0 +1,96 @@
+#dashboard_listing {
+  .ani_pet_review_box {
+    border: 1px solid #00000033;
+    background-color: #fff;
+  }
+  .filters {
+    border-radius: 20px;
+  }
+}
+.singlecate__top {
+  padding: 70px 0 90px;
+
+  p {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+.filter__sorting__area {
+  margin-bottom: 35px;
+
+  .sort__by {
+    display: inline-flex;
+    gap: 14px;
+    white-space: nowrap;
+    align-items: center;
+
+    span {
+      color: #000000e5;
+    }
+
+    select {
+      min-width: 239px;
+      font-size: 18px;
+      height: 53px;
+      padding: 10px 20px !important;
+    }
+  }
+}
+
+.recently__reviews__companies {
+  background: #e7f4ef;
+  padding: 50px 0 90px;
+  margin-bottom: -50px;
+
+  h2 {
+    font-size: 26px;
+    margin-bottom: 32px;
+  }
+
+  .rec__comp__box {
+    .main__review__box {
+      width: 33.33%;
+
+      .main__review__wrap {
+        background: #ffffff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+  .recently__reviews__companies .rec__comp__box .main__review__box {
+    width: 50%;
+  }
+  .singlecate__top {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .filters {
+    padding: 30px 20px;
+  }
+  #title {
+    margin-top: 30px;
+  }
+  #result {
+    display: none;
+  }
+
+  .singlecate__top p {
+    font-size: 17px;
+  }
+
+  .singlecate__top {
+    padding: 40px 0 21px;
+  }
+
+  .popular-search {
+    margin: 30px 0 50px;
+  }
+  .filter__pagi_wrap {
+    margin: 30px 0 !important;
+  }
+}

@@ -1,0 +1,42 @@
+.category__page {
+    .all__cat__lists__wrap {
+        margin-top: 60px;
+    }
+
+    .all__cat__area {
+
+        padding: 70px 0;
+    }
+
+    .cat__archive__head {
+        max-width: 800px;
+    }
+}
+
+.categories___lists {
+    .row{
+        margin-bottom: 35px;
+    }
+    margin-top: 45px;
+    .col-lg-4 {
+        &:nth-child(3n - 1) {
+            .category__card .categor__card__head {
+                background-color: var(--body);
+
+                h4 {
+                    color: #fff;
+                }
+            }
+        }
+
+        &:nth-child(2n - 0) {
+            .category__card .categor__card__head {
+                background-color: var(--d-green);
+
+                h4 {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

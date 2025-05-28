@@ -1,0 +1,116 @@
+.bussiness__reply__stats {
+    padding-bottom: 100px;
+
+    .stats__single__box {
+        background-color: #EFF3F7;
+        border-radius: 25px;
+        padding: 20px 20px 31px;
+        height: 100%;
+
+        .stats__count {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        p {
+            max-width: 270px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.why__bussiness__reply {
+    background-color: var(--body);
+
+    .whybussiness__feedback__box {
+        .wb__feedbackbox {
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 25px;
+            height: 100%;
+
+            p {
+                margin-bottom: 26px;
+            }
+
+            h2 {
+                font-weight: 700;
+                margin-bottom: 12px;
+            }
+
+            .default__btn {
+                min-width: 217px;
+            }
+        }
+
+        .row {
+            row-gap: 20px;
+
+            &>:first-child {
+                width: 50%;
+                flex: 0 0 50%;
+
+                .wbf__wrap {
+                    max-width: 370px;
+                }
+            }
+
+            &>:nth-child(3) {
+                width: 66%;
+                flex: 0 0 66%;
+            }
+
+            &>:nth-child(4) {
+                width: 34%;
+                flex: 0 0 34%;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .bussiness__reply__stats .stats__single__box .stats__count {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .why__bussiness__reply .whybussiness__feedback__box .wb__feedbackbox {
+        padding: 30px;
+    }
+
+    .why__bussiness__reply .whybussiness__feedback__box .row> :nth-child(3) {
+        width: 60%;
+        flex: 0 0 60%;
+    }
+
+    .why__bussiness__reply .whybussiness__feedback__box .row> :nth-child(4) {
+        width: 40%;
+        flex: 0 0 40%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .why__bussiness__reply .whybussiness__feedback__box .row>* {
+        width: 100% !important;
+        flex: 0 0 auto !important;
+    }
+
+    .why__bussiness__reply .whybussiness__feedback__box .wb__feedbackbox {
+        padding: 30px 20px 20px;
+    }
+
+    .bussiness__reply__stats .row {
+        row-gap: 25px;
+    }
+
+    .bussiness__reply__stats .stats__single__box .stats__count {
+        font-size: 38px;
+    }
+
+    .bussiness__reply__stats {
+        padding-bottom: 50px;
+    }
+}

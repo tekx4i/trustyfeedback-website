@@ -1,0 +1,95 @@
+.user_dashboard {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  // margin: 20px 0;
+  border: 1px solid #17253f26;
+  margin-bottom: 16px;
+
+  .user__img {
+    flex: 0 0 49px;
+
+    img {
+      width: 49px;
+      height: 49px;
+      border-radius: 50%;
+    }
+  }
+
+  .user-detail {
+    align-self: center;
+    margin-left: 10px;
+
+    h6 {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .rating__star {
+    display: flex;
+    align-self: center;
+
+    svg {
+      margin-right: 2px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .comment__detail {
+    margin-top: 24px;
+
+    h6 {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    p {
+      color: #000;
+    }
+
+    .comment__date {
+      color: #000;
+      opacity: 0.7;
+      font-size: 14px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .bottom__share__btn {
+    button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      outline: none;
+      color: rgba(23, 37, 63, 0.7);
+      background-color: transparent;
+    }
+  }
+
+  hr {
+    margin: 19px 0 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .comment__card {
+    padding: 20px 15px;
+    .d-flex {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+  .comment__card .comment__detail {
+    margin-top: 15px;
+  }
+}

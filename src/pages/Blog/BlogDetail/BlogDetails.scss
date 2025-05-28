@@ -1,0 +1,142 @@
+.blog__detail__page {
+  padding: 65px 0 80px;
+
+  .container {
+    max-width: 960px;
+  }
+
+  .pag__wrap {
+    margin-bottom: 13px;
+  }
+
+  .blog__metas {
+    gap: 42px;
+    margin-bottom: 70px;
+
+    .singel__meta {
+      gap: 8px;
+
+      .author__avatar {
+        flex: 0 0 32px;
+
+        img {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+        }
+      }
+
+      p {
+        color: #252525;
+
+        a {
+          color: #25252580;
+        }
+      }
+    }
+  }
+
+  .b__feature__img {
+    margin-bottom: 40px;
+
+    img {
+      border-radius: 16px;
+      width: 100%;
+      height: 418px;
+      object-fit: cover;
+    }
+  }
+
+  .blog__content {
+    h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      line-height: 1.8;
+      margin-bottom: 17px;
+    }
+
+    img {
+      margin: 39px 0;
+      border-radius: 20px;
+      width: 100%;
+    }
+  }
+
+  .hightlied__text {
+    background-color: #EAF0F8;
+    border-radius: 25px;
+    margin-top: 40px;
+    padding: 40px;
+
+    h4 {
+      color: var(--body);
+    }
+
+    p {
+      color: var(--body);
+    }
+  }
+
+  .leave__eply__form {
+    margin-top: 72px;
+
+    h3 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    textarea {
+      border-radius: 20px;
+      height: 96px;
+    }
+
+    input {
+      height: 62px;
+    }
+
+    .default__btn {
+      min-width: 140px;
+      margin-top: 10px;
+    }
+  }
+}
+
+body:has(.blog-detail) #footer {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .blog__detail__page {
+    padding-top: 40px;
+  }
+
+  .blog__detail__page .blog__metas {
+    gap: 20px;
+    margin-bottom: 35px;
+  }
+
+  .blog__detail__page .hightlied__text {
+    padding: 20px;
+  }
+
+  .blog__detail__page .leave__eply__form {
+    margin-top: 40px;
+  }
+
+  .related__articles .row .blog__box__wrap {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .related__articles {
+    padding: 40px 10px 50px;
+  }
+
+  .blog__detail__page .blog__metas .singel__meta p {
+    font-size: 14px;
+  }
+}

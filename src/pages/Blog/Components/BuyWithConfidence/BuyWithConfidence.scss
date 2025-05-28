@@ -1,0 +1,29 @@
+.buyWithConfidence {
+    background-color: #EAF0F8;
+    padding: 80px 10px;
+    border-radius: 35px 35px 0 0;
+    margin: 0 30px;
+    position: relative;
+    z-index: 999;
+
+
+    .top__verifiedbanks {
+        margin: 0 -10px;
+    }
+}
+@media screen and (max-width:1023px) and (min-width:768px) {
+    .buyWithConfidence {
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width:767px) {
+    .buyWithConfidence .top__insurance__companies {
+        padding-bottom: 0;
+        margin: 0;
+    }
+    .buyWithConfidence {
+        padding: 54px 10px;
+        margin: 0 10px;
+    }
+    
+}

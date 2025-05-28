@@ -1,0 +1,127 @@
+.comment__card {
+  background-color: #eff3f7;
+  border-radius: 20px;
+  padding: 25px;
+  margin: 20px 0;
+  width: 100%;
+  .reply__of_review {
+    background-color: #e4e6f7;
+    width: 100%;
+    margin-bottom: 14px;
+    padding: 25px;
+    border-radius: 25px;
+    border-left: 5px solid var(--blue);
+    h6 {
+      font-weight: 700;
+    }
+  }
+  .user__img {
+    flex: 0 0 49px;
+
+    img {
+      width: 49px;
+      height: 49px;
+      border-radius: 50%;
+    }
+  }
+
+  .user-detail {
+    align-self: center;
+    margin-left: 10px;
+
+    h6 {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .rating__star {
+    display: flex;
+    align-self: center;
+
+    svg {
+      margin-right: 2px;
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .comment__detail {
+    margin-top: 24px;
+
+    h6 {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    p {
+      color: #000;
+    }
+    span p {
+      margin-bottom: 10px !important;
+      word-break: break-all;
+    }
+    .images_of_comment {
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    .comment__date {
+      color: #000;
+      opacity: 0.7;
+      font-size: 14px;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .bottom__share__btn {
+    button {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      outline: none;
+      color: rgba(23, 37, 63, 0.7);
+      background-color: transparent;
+    }
+    .like-btn {
+      svg {
+        margin-top: -4px;
+      }
+    }
+    .count-likes {
+      margin-right: -4px;
+      font-size: 16px;
+    }
+  }
+  .toggle-btn {
+    background-color: transparent;
+    border: 0;
+    color: var(--blue);
+    font-size: 14px;
+  }
+  hr {
+    margin: 19px 0 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .comment__card {
+    padding: 20px 15px;
+    .d-flex {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  }
+  .comment__card .comment__detail {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,50 @@
+.single__article__box {
+    background: #EFF3F7;
+    padding: 15px 15px 20px;
+    border-radius: 25px;
+
+    .arti__img {
+        margin-bottom: 20px;
+        a{
+          display: block; 
+        img {
+            height: 260px;
+            width: 100%;
+            border-radius: 16px;
+        }
+        }
+    }
+
+    .reviews__btn {
+        color: var(--body);
+
+        svg path {
+            fill: var(--body);
+        }
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 4px;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+.bst__wrap.style__change{
+    .arti__img {
+        img{
+            height: 190px;
+        }
+    }
+}

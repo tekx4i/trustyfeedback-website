@@ -1,0 +1,168 @@
+.my__accounts {
+  background-color: #fff;
+  border: 1px solid #17253f26;
+  border-radius: 20px;
+  padding: 34px 40px;
+  h3 {
+    font-family: var(--poppins);
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  .custom__tab {
+    display: flex;
+    border-bottom: 1px solid #d1d3d9;
+    .custom__tab-btn {
+      margin-right: 36px;
+      padding: 4px 0;
+      cursor: pointer;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .active_bar {
+      margin-top: 5px;
+      border: 2px solid var(--d-blue);
+      border-radius: 10px 10px 0px 0px;
+      margin-bottom: -5px;
+    }
+  }
+  .profile__account {
+    margin: 40px 0;
+    img {
+      box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+      border-radius: 100px;
+      width: 108px;
+      height: 108px;
+      margin-right: 20px;
+    }
+    .change_img {
+      border: 1.5px solid var(--body);
+      padding: 13px 35px 13px 35px;
+      border-radius: 100px;
+      background-color: #fff;
+      font-weight: 600;
+      font-family: var(--poppins);
+      color: var(--body) !important;
+      position: relative;
+    }
+    .remov_btn {
+      border: 0;
+      background-color: transparent;
+      margin-left: 30px;
+      color: var(--body) !important;
+      font-weight: 600;
+      font-family: var(--poppins);
+    }
+  }
+  .min_body {
+    max-width: 768px;
+    &.inner__page {
+      margin-top: 40px;
+    }
+  }
+  .account_label {
+    margin-bottom: 16px;
+  }
+  .account_input {
+    margin-bottom: 28px;
+    padding: 19px;
+    background-color: #eaf0f8;
+    border: 1px solid #d5dce5;
+  }
+  .react-tel-input .form-control {
+    background-color: #eaf0f8;
+  }
+  .react-tel-input .flag-dropdown {
+    background-color: #eaf0f8;
+  }
+  .sav_btn_account {
+    border-radius: 100px;
+    border: 0;
+    color: #fff;
+    width: 100%;
+    background-color: var(--d-blue);
+    padding: 20px;
+    font-weight: 600;
+    font-family: var(--poppins);
+  }
+  .change_img_file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 30px;
+  min-width: 300px;
+
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+
+    button {
+      padding: 8px 16px;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+
+      &:first-child {
+        background-color: #e0e0e0;
+      }
+
+      &:last-child {
+        background-color: #dc3545;
+        color: white;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .my__accounts {
+    margin: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .my__accounts {
+    margin: 20px 10px;
+  }
+  .profile__account {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .change_img {
+    margin-top: 20px;
+  }
+  .remov_btn {
+    margin-left: 0 !important;
+    margin-top: 10px;
+  }
+}
